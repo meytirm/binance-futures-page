@@ -1,16 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  modules: ['@nuxt/eslint'],
   devtools: { enabled: true },
   css: ['./app/assets/css/main.css'],
+  compatibilityDate: '2025-07-15',
   vite: {
     plugins: [
       tailwindcss(),
     ],
   },
-  modules: ['@nuxt/eslint'],
+  typescript: {
+    typeCheck: true,
+  },
   eslint: {
     config: {
       stylistic: {
@@ -19,8 +22,5 @@ export default defineNuxtConfig({
         quotes: 'single',
       },
     },
-  },
-  typescript: {
-    typeCheck: true,
   },
 })

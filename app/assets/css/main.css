@@ -1,1 +1,64 @@
 @import "tailwindcss";
+
+:root {
+  --black: #181A20;
+  --white: #ffffff;
+  --gray: #EAECEF;
+}
+
+@theme {
+  --color-background: var(--white);
+  --color-foreground: var(--black);
+}
+
+@utility dark {
+  --color-background: var(--black);
+  --color-foreground: var(--gray);
+}
+
+@font-face {
+  font-family: 'BinanceNova';
+  font-display: swap;
+  src: url('../fonts/BinanceNova-Light.woff2') format('woff2'),url('../fonts/BinanceNova-Light.otf') format('opentype');
+  font-weight: 200 300;
+}
+
+@font-face {
+  font-family: 'BinanceNova';
+  font-display: swap;
+  src: url('../fonts/BinanceNova-Regular.woff2') format('woff2'),url('../fonts/BinanceNova-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'BinanceNova';
+  font-display: swap;
+  src: url('../fonts/BinanceNova-Medium.woff2') format('woff2'),url('../fonts/BinanceNova-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'BinanceNova';
+  font-display: swap;
+  src: url('../fonts/BinanceNova-SemiBold.woff2') format('woff2'),url('../fonts/BinanceNova-SemiBold.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'BinanceNova';
+  font-display: swap;
+  src: url('../fonts/BinanceNova-Bold.woff2') format('woff2'),url('../fonts/BinanceNova-Bold.otf') format('opentype');
+  font-weight: 700 800;
+}
+
+@font-face {
+  font-family: 'BinanceNova';
+  font-display: swap;
+  src: url('../fonts/BinanceNova-Black.woff2') format('woff2'),url('../fonts/BinanceNova-Black.otf') format('opentype');
+  font-weight: 900;
+}
+
+
+html body,body {
+  font-family: BinanceNova,Arial,sans-serif;
+}

@@ -10,4 +10,14 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  modules: ['@nuxt/eslint'],
+  eslint: {
+    config: {
+      stylistic: {
+        indent: 2,
+        semi: false,
+        quotes: 'single',
+      },
+    },
+  },
 })

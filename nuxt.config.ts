@@ -2,9 +2,12 @@
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', 'shadcn-nuxt'],
+  modules: ['@nuxt/eslint', 'shadcn-nuxt', '@nuxtjs/color-mode'],
   devtools: { enabled: true },
   css: ['./app/assets/css/main.css'],
+  colorMode: {
+    classSuffix: '',
+  },
   compatibilityDate: '2025-07-15',
   vite: {
     plugins: [

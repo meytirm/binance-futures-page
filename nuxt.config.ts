@@ -2,7 +2,7 @@
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', 'shadcn-nuxt', '@nuxtjs/color-mode'],
+  modules: ['@nuxt/eslint', 'shadcn-nuxt', '@nuxtjs/color-mode', '@nuxt/icon'],
   devtools: { enabled: true },
   css: ['./app/assets/css/main.css'],
   colorMode: {
@@ -25,6 +25,16 @@ export default defineNuxtConfig({
         quotes: 'single',
       },
     },
+  },
+  icon: {
+    customCollections: [
+      {
+        prefix: 'b',
+        dir: './app/assets/icons',
+        width: 24,
+        height: 24,
+      },
+    ],
   },
   shadcn: {
     /**
